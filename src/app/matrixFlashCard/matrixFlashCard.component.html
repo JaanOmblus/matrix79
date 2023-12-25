@@ -1,0 +1,20 @@
+
+<button (click)="onclick()" type="button" class="btn  btn-danger">
+  {{ReadMore?"Read More":"Read Less"}}
+</button>
+
+
+<ng-container *ngIf="visible">
+
+
+
+<label>    
+  <div class="flashcard" [class.flipped]="flipped" (click)="toggle()">
+      <div class="front">
+        <span>This is front</span>
+    </div>
+      <div class="back">Now showing the back size {{kirjuta()}}</div>
+  </div>
+</label>
+
+</ng-container>
